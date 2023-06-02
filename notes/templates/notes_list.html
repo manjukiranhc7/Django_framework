@@ -1,0 +1,16 @@
+{% load static %}
+
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+    </head>
+    <h1>
+        These are the notes table which I have created
+    </h1>
+    <ul>
+        {% for note in notes %}
+            <li class="note_li">{{note.title}} :: {{note.notes}}</li>
+        {% endfor %}
+    </ul>
+</html>
